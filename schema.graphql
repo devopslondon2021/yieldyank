@@ -1,6 +1,13 @@
-type ExampleEntity @entity {
+type Transaction @entity {
   id: ID!
   count: BigInt!
   owner: Bytes! # address
   spender: Bytes! # address
+}
+
+type Token @entity {
+  id: ID!
+  name: String!
+  symbol: String!
+  decimals: Int!
 }
