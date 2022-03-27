@@ -1,0 +1,16 @@
+{
+  "name": "yieldYank",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ devopslondon2021/yieldYank",
+    "create-local": "graph create --node http://localhost:8020/ devopslondon2021/yieldYank",
+    "remove-local": "graph remove --node http://localhost:8020/ devopslondon2021/yieldYank",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 devopslondon2021/yieldYank"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.29.0",
+    "@graphprotocol/graph-ts": "0.26.0"
+  }
+}
