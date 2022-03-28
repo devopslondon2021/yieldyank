@@ -54,6 +54,6 @@ export function handleWithdraw(event: Withdraw): void {
     // }
     // transaction.amount = _amount;
     // transaction.amountUSD = _amountUSD;
-    // transaction.save();
+    transaction.save();
   }
 }
