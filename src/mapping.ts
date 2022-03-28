@@ -34,7 +34,7 @@ export function handleDeposit(event: Deposit): void {
 }
 
 export function handleWithdraw(event: Withdraw): void {
-  let id = "deposit-"+event.transaction.hash.toHexString()
+  let id = "withdraw-"+event.transaction.hash.toHexString()
   let transaction = WithdrawTransaction.load(id)
 
   if (transaction == null) {
