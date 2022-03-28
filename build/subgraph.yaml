@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: Contract
@@ -18,10 +18,10 @@ dataSources:
         - Transfer
       abis:
         - name: vault
-          file: ./abis/Yrt.json
+          file: Contract/abis/Yrt.json
       eventHandlers:
         - event: Deposit(indexed address,uint256)
           handler: handleDeposit
         - event: Withdraw(indexed address,uint256)
           handler: handleWithdraw
-      file: ./src/mapping.ts
+      file: Contract/Contract.wasm
